@@ -1,15 +1,24 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import { Card } from './components/Card/Card';
 import { Header } from './components/Header/Header';
 import './global.css';
-
+import styles from './App.module.css';
+import {Post} from './components/Post/Post';
 export function App() {
 
   return (
     <div className="App">
-      <Header></Header>
-      <Card></Card>
+      <Header/>
+      <div className={styles.wrapper}>
+        <aside>
+          sidebar
+        </aside>
+        <main>
+          <Post
+             author="Mario"
+             content="idk"
+          />
+        </main>
+      </div>
     </div>
   )
 }
