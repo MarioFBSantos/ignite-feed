@@ -30,7 +30,7 @@
     line-height: 1.6;
 }
 
-.pfp{
+.avatar{
     /* box-sizing: initial; */
     /* width: calc(3rem + 12px); */
     width: calc(3rem + 12px);
@@ -62,4 +62,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 0.5rem;
+
+    transition: color 0.1s, background-color 0.1s;
+}
+
+.sidebar footer a:hover{
+    background: var(--green-500);
+    color: var(--white);
 }
